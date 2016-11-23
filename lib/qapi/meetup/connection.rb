@@ -9,10 +9,10 @@ module Qapi::Meetup
       GroupQuery.new(self)
     end
 
-    # conn.members.find(id)
-    # conn.members.me
-    def members
-      MemberQuery.new(self)
+    # conn.users.find(id)
+    # conn.users.me
+    def users
+      UserQuery.new(self)
     end
   end
 end
